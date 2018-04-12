@@ -1,0 +1,199 @@
+/**********
+ ** PAGE **
+ **********/
+
+html{
+    margin: 0;
+    padding: 4ex 16.75em;
+    background-color: #667755;
+}
+
+body {
+    margin: 0;
+    padding: 3em;
+    background-color: #FFFFFF;
+    color: #554433;
+    border-radius: 7px;
+    box-shadow: 5px 5px 10px #000000;
+}
+
+/***********
+ ** LINKS **
+ ***********/
+
+a {
+    color: #448800;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+/*****************
+ ** PAGE HEADER **
+ *****************/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+/* author's name */
+h1 {
+    margin: 0;
+    margin-left: 2in;
+    align-self: flex-end;
+    font-family: 'Playfair Display';
+    font-size: 50pt;
+    font-weight: normal;
+}
+
+h1,
+h2 {
+    color: #aa3333;
+}
+
+header .Contact {
+    margin: 0;
+    margin-top: 1.75ex;
+    text-align: right;
+    font-family: 'Inconsolata';
+}
+
+/***************
+ ** PAGE BODY **
+ ***************/
+
+section {
+    display: table;
+    width: 100%;
+    margin: 0;
+}
+
+section:not(:last-child) {
+    margin-bottom: 3ex;
+}
+
+/*****************
+ ** LEFT GUTTER **
+ *****************/
+
+/* section name */
+h2 {
+    display: table-cell;
+    width: 2in;
+    margin: 0;
+    word-spacing: 100vw;
+    font-family: 'Raleway';
+    font-weight: bold;
+}
+
+/******************
+ ** CONTENT AREA **
+ ******************/
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 0;
+    font-family: 'Raleway';
+}
+
+article > * {
+    flex-grow: 1;
+    width: 70%;
+    margin: 0;
+}
+
+/******************
+ ** CONTENT ITEM **
+ ******************/
+
+/* item name */
+h3 {
+    margin: 0;
+    font-weight: bold;
+}
+
+h3 :not(.Name) {
+    font-weight: normal;
+    font-size: smaller;
+}
+
+/* sub-item name */
+h4 {
+    margin: 0;
+    margin-top: 1ex;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/****************
+ ** FORMATTING **
+ ****************/
+
+.Dated {
+    width: auto;
+    text-align: right;
+}
+
+/***************
+ ** STRUCTURE **
+ ***************/
+
+.Advisor:before {
+    content: "Advisor ";
+}
+
+.Advisors:before {
+    content: "Advisors ";
+}
+
+.Professor:before{
+    content: "Professor ";
+}
+
+.Professors:before {
+    content: "Professors ";
+}
+
+/*************
+ ** CONTENT **
+ *************/
+
+.OpenSource h3 > a,
+.Reports h3 > a {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+h4 + .Dated {
+    margin-top: 1ex;
+}
+
+article:not(:last-child) {
+    margin-bottom: 2ex;
+}
+
+h4 {
+    margin-top: 1ex;
+}
+
+.Publications .Volume {
+    font-style: italic;
+}
